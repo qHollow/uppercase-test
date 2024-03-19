@@ -1,0 +1,12 @@
+.chip {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5px 15px;
+	color: var(--text-color-white);
+	font-weight: 500;
+	font-size: var(--font-size-xs);
+	line-height: 140%;
+	background-color: var(--accent-color);
+	border-radius: var(--border-radius-sm);
+}

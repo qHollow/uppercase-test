@@ -1,0 +1,20 @@
+.loader {
+	width: 50px;
+	padding: 8px;
+	background: var(--accent-color);
+	border-radius: 50%;
+	animation: spin 1s infinite linear;
+	aspect-ratio: 1;
+	mask: var(--gradient);
+	mask-composite: source-out;
+	mask-composite: subtract;
+
+	--gradient: conic-gradient(#0000 10%, #000),
+		linear-gradient(#000 0 0) content-box;
+}
+
+@keyframes spin {
+	to {
+		transform: rotate(1turn);
+	}
+}

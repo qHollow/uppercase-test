@@ -1,0 +1,32 @@
+.error {
+	font-weight: 600;
+	font-size: var(--font-size-md);
+}
+
+.cards {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: repeat(5, 245px);
+	gap: 52px 56px;
+	justify-content: center;
+	padding-bottom: 84px;
+}
+
+.cards:has(.loader),
+.cards:has(.error) {
+	grid-template-columns: 1fr;
+	place-items: center;
+}
+
+.pagination {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 24px;
+}
+
+@media (width <= 1440px) {
+	.cards {
+		grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+		justify-items: center;
+	}
+}

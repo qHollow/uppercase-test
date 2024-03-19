@@ -1,0 +1,11 @@
+.avatar {
+	display: flex;
+	gap: 9px;
+	align-items: center;
+	justify-content: center;
+}
+
+.avatar__nickname {
+	color: var(--text-color);
+	font-size: var(--font-size-xs);
+}

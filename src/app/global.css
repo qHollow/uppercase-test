@@ -1,0 +1,53 @@
+@font-face {
+	font-weight: normal;
+	font-family: Gilroy;
+	src: local("Gilroy Regular"), url("../Gilroy-Regular.woff2") format("woff2"),
+		url("../Gilroy-Regular.woff") format("woff");
+}
+
+:root {
+	--background: hsl(0deg 0% 101%);
+	--foreground: hsl(227deg 100% 99%);
+	--accent-color: hsl(258deg 100% 58%);
+	--text-color: hsl(0deg 0% 0%);
+	--input-placeholder-color: hsl(226deg 24% 65%);
+	--input-background: hsl(240deg 100% 99%);
+	--input-border: hsl(224deg 43% 93%);
+	--text-color-white: hsl(227deg 100% 99%);
+	--font-family: "Gilroy", sans-serif;
+	--font-size-md: 22px;
+	--font-size-sm: 16px;
+	--font-size-xs: 14px;
+	--border-radius-md: 10px;
+	--border-radius-sm: 5px;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	border-width: 0;
+	clip: rect(0, 0, 0, 0);
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	font-family: var(--font-family);
+}
+
+body,
+p {
+	margin: 0;
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}

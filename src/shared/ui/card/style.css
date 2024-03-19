@@ -1,0 +1,23 @@
+.card {
+	width: 245px;
+}
+
+.card__image {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 270px;
+	overflow: hidden;
+	border: 1px solid var(--accent-color);
+	border-radius: var(--border-radius-md);
+}
+
+.card__info {
+	margin-top: 24px;
+	margin-left: 13px;
+	color: var(--text-color);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 140%;
+}

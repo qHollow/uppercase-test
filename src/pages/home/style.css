@@ -1,0 +1,40 @@
+.main {
+	padding: 0 64px;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 40px;
+	padding-bottom: 44px;
+}
+
+.search-info {
+	display: flex;
+	gap: 14px;
+	align-items: center;
+	padding-bottom: 58px;
+}
+
+.search-info__text {
+	color: var(--text-color);
+	font-weight: 400;
+	font-size: var(--font-size-md);
+	line-height: 140%;
+}
+
+.search-info__search-phrase {
+	text-decoration: underline;
+}
+
+@media (width <= 750px) {
+	.header {
+		flex-direction: column;
+		gap: 24px;
+	}
+	
+	.search-info {
+		justify-content: center;
+	}
+}

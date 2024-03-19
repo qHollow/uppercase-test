@@ -1,0 +1,36 @@
+.pagination__list {
+	display: flex;
+}
+
+.pagination__button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 30px;
+	height: 27px;
+	color: var(--text-color);
+	font-size: 12px;
+	background-color: var(--input-background);
+	border: 1px solid var(--input-border);
+	cursor: pointer;
+}
+
+.pagination__button--active {
+	background-color: hsl(226deg 28% 97%);
+}
+
+.pagination__arrow {
+	transform: rotate(180deg);
+}
+
+.pagination__button--prev {
+	width: 27px;
+	height: 27px;
+	border-radius: var(--border-radius-sm) 0 0 var(--border-radius-sm);
+}
+
+.pagination__button--next {
+	width: 27px;
+	height: 27px;
+	border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
+}
